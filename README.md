@@ -1,12 +1,14 @@
 # MambaTS
 
-The repo is the official implementation for the paper: [MambaTS: Improved Selective State Space Models for Long-term Time Series Forecasting](http://arxiv.org/abs/2405.16440).
+The repo is the official implementation for the paper: MambaTS: Improved Selective State Space Models for Long-term Time Series Forecasting [[paper](http://arxiv.org/abs/2405.16440)].
 
-For the architecture design of MambaTS, please refer primarily to `models/MambaTS.py`.
+Key codes:
 
-For variable permutation training (VPT), please focus on the `random_shuffle` and `unshuffle` function in `utils/masking.py`.
+* For the architecture design of MambaTS, please refer primarily to `models/MambaTS.py`.
+* For variable permutation training (VPT), please focus on the `random_shuffle` and `unshuffle` function in `utils/masking.py`.
+* For variable-aware scan along time (VAST), please refer mainly to `layers/mamba_ssm/mixer2_seq_simple.py`.
 
-For variable-aware scan along time (VAST), please refer mainly to `layers/mamba_ssm/mixer2_seq_simple.py`.
+Recently, we've also released a repo tracking the latest developments in Mamba. If you're interested, you can check it out at [Awesome-Mamba-Collection](https://github.com/XiudingCai/Awesome-Mamba-Collection) and enjoy it.
 
 ## Usage
 
