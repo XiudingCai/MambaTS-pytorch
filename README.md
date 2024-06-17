@@ -1,6 +1,6 @@
 # MambaTS
 
-The repo is the official implementation for the paper: MambaTS: Improved Selective State Space Models for Long-term Time Series Forecasting [[paper](http://arxiv.org/abs/2405.16440)].
+The repo is the official implementation for the paper: [MambaTS: Improved Selective State Space Models for Long-term Time Series Forecasting](http://arxiv.org/abs/2405.16440).
 
 Key codes:
 
@@ -25,7 +25,7 @@ Recently, we've also released a repo tracking the latest developments in Mamba. 
    pip install mamba-ssm
    ```
 
-3. Prepare Data. You can obtain the well pre-processed datasets from public channel like [[Google Drive]](https://drive.google.com/drive/folders/13Cg1KYOlzM5C7K8gK8NfC-F3EYxkM3D2?usp=sharing), Then place the downloaded data in the folder`./dataset`. 
+3. Prepare Data. You can obtain the well pre-processed datasets from public channel like [[Google Drive]](https://drive.google.com/drive/folders/13Cg1KYOlzM5C7K8gK8NfC-F3EYxkM3D2?usp=sharing) or [[Tsinghua Cloud]](https://cloud.tsinghua.edu.cn/f/2ea5ca3d621e4e5ba36a/), Then place the downloaded data in the folder`./dataset`. 
 
 4. Train and evaluate model. We provide the experiment scripts for MambaTS under the folder `./scripts/`. You can reproduce the experiment results as the following examples:
 
@@ -43,7 +43,7 @@ This library is constructed based on the following repos:
 
 All the experiment datasets are public, and we obtain them from the following links:
 
-- Long-term Forecasting: https://github.com/thuml/Autoformer.
+- Long-term Forecasting: https://github.com/thuml/Autoformer and https://github.com/thuml/iTransformer.
 
 We also greatly appreciate the [python-tsp](https://github.com/fillipe-gsm/python-tsp) for providing efficient solvers for the Asymmetric Traveling Salesperson Problem (ATSP).
 
