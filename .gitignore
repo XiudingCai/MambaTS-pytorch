@@ -133,7 +133,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-/datasets/monet2photo/
 /checkpoints/
 /run_ane.py
 /dataset/
+/result_long_term_forecast.txt
