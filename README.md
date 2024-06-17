@@ -30,8 +30,8 @@ Recently, we've also released a repo tracking the latest developments in Mamba. 
 4. Train and evaluate model. We provide the experiment scripts for MambaTS under the folder `./scripts/`. You can reproduce the experiment results as the following examples:
 
    ```
-   # long-term forecast for ECL dataset
-   bash ./scripts/long_term_forecast/MambaTS_ECL.sh
+   # long-term forecast for ETTm2 dataset
+   bash ./scripts/long_term_forecast/MambaTS_ETTm2.sh
    ```
 
 ## Acknowledgement
