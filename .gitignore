@@ -136,3 +136,4 @@ dmypy.json
 /datasets/monet2photo/
 /checkpoints/
 /run_ane.py
+/dataset/
