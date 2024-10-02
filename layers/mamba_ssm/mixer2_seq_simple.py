@@ -274,7 +274,7 @@ class MixerTSModel(nn.Module):
                     elif self.ATSP_solver in ['SA', 'LS', 'LK']:
                         adjacency_matrix = self.get_adjacency_matrix()
 
-                        # # 起始节点
+                        # # starting node
                         start_index = torch.argmin(torch.diag(adjacency_matrix)).item()
                         for j in range(adjacency_matrix.size(0)):
                             adjacency_matrix[j, j] = 0
@@ -347,7 +347,7 @@ class MixerTSModel(nn.Module):
         # print(cost_tensor.shape)
         cost_tensor = cost_tensor.detach()
         cost_tensor = reduce(cost_tensor, 'b t c -> b', 'mean')
-        cost_tensor = cost_tensor - cost_tensor.mean()
+        cost_tensor = cost_tensor / torch.sqrt(cost_tensor.var())
         count_tensor = torch.ones_like(cost_tensor)
 
         B, C = cost_tensor.size(0), self.adjacency_matrix.size(0)
